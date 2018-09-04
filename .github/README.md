@@ -33,13 +33,7 @@ REDIS_HOST=redis
 
 QUEUE_HOST=beanstalkd
 ```
-
-## 5. Open your browser and visit localhost:
-- http://localhost/ for the existing site 
-- http://localhost:81/ for the new Laravel site 
-- http://localhost:82/ for PHPMyAdmin 
-
-## 6. To access the CLI:
+## 5. To access the CLI:
 ```
 docker-compose exec workspace bash
 ```
@@ -47,5 +41,16 @@ on Windows:
 ```
 winpty docker-compose exec workspace bash
 ```
+When it drops to the CLI within the workspace, inside the Laravel repo, install the components
+```
+cd AMlaravel
+composer intall
+```
+
+## 6. Open your browser and visit localhost:
+- http://localhost/ for the existing site 
+- http://localhost:81/ for the new Laravel site 
+- http://localhost:82/ for PHPMyAdmin 
+
 ## That's it! enjoy :)
 
