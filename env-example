@@ -278,9 +278,9 @@ PMA_DB_ENGINE=mariadb
 
 # Credentials/Port:
 
-PMA_USER=default
-PMA_PASSWORD=secret
-PMA_ROOT_PASSWORD=secret
+PMA_USER=root
+PMA_PASSWORD=""
+PMA_ROOT_PASSWORD=""
 PMA_PORT=82
 
 ### MAILDEV ###############################################

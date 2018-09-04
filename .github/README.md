@@ -11,7 +11,7 @@ Your folders next to each other should look like:
 - AMlaravel
 - laradock
 
-## 2. Enter the laradock folder and copy env-example to .env.
+## 2. Enter the laradock folder and copy env-example to .env
 ```
 cp env-example .env
 ```
@@ -26,7 +26,7 @@ docker-compose up -d --build
 DB_HOST=mysql
 DB_DATABASE=accountancymanager
 DB_USER=root
-DB_PASSWORD=""
+DB_PASSWORD=root
 DB_PORT=3306
 
 REDIS_HOST=redis
@@ -42,6 +42,10 @@ QUEUE_HOST=beanstalkd
 ## 6. To access the CLI:
 ```
 docker-compose exec workspace bash
+```
+on Windows:
+```
+winpty docker-compose exec workspace bash
 ```
 ## That's it! enjoy :)
 
