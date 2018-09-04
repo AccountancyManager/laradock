@@ -44,7 +44,7 @@ winpty docker-compose exec workspace bash
 When it drops to the CLI within the workspace, inside the Laravel repo, install the components
 ```
 cd AMlaravel
-composer intall
+composer install
 ```
 
 ## 6. Open your browser and visit localhost:
