@@ -43,6 +43,16 @@ composer install
 php artisan key:generate
 ```
 
+## 6. A few more things...
+We need to set our local DB to 'non strict mode', running the lines below on your db seems to do the job, there may be a better solution to this issue.
+Without running this code, you will get a bunch of "'column_name' default value not set" errors.
+```
+SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION';
+SET SESSION sql_mode = 'NO_ENGINE_SUBSTITUTION';
+```
+
+You will need a dev.php file and a .gitignore file within AMDev, im unsure if these are things we can commit to the source code, so for now, we can share them between us.
+
 ## 6. Open your browser and visit localhost:
 - http://localhost/ for the existing site 
 - http://localhost:81/ for the new Laravel site 
