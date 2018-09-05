@@ -45,6 +45,7 @@ When it drops to the CLI within the workspace, inside the Laravel repo, install 
 ```
 cd AMlaravel
 composer install
+php artisan key:generate
 ```
 
 ## 6. Open your browser and visit localhost:
