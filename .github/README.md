@@ -16,32 +16,27 @@ Your folders next to each other should look like:
 cp env-example .env
 ```
 
-## 3. Run the AM containers (the -d runs it in the background, --build makes sure it rebuilds the containers):
+## 3. Enter the AMlaravel folder and copy env-example to .env
+```
+cp env-example .env
+```
+
+## 4. Run the AM containers (the -d runs it in the background, --build makes sure it rebuilds the containers):
 ```
 docker-compose up -d --build
 ```
 
-## 4. Open the Laravel .env file and set the following:
-```
-DB_HOST=mysql
-DB_DATABASE=accountancymanager
-DB_USER=root
-DB_PASSWORD=root
-DB_PORT=3306
-
-REDIS_HOST=redis
-
-QUEUE_HOST=beanstalkd
-```
 ## 5. To access the CLI:
+
+Execute one of these from within the laradock folder:
 ```
 docker-compose exec workspace bash
 ```
-on Windows:
+Or on Windows:
 ```
 winpty docker-compose exec workspace bash
 ```
-When it drops to the CLI within the workspace, inside the Laravel repo, install the components
+When it drops to the CLI within the workspace, navigate to the Laravel repo, install the components, generate a unique key
 ```
 cd AMlaravel
 composer install
