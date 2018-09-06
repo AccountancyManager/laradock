@@ -36,11 +36,12 @@ Or on Windows:
 ```
 winpty docker-compose exec workspace bash
 ```
-When it drops to the CLI within the workspace, navigate to the Laravel repo, install the components, generate a unique key
+When it drops to the CLI within the workspace, navigate to the Laravel repo, install the components, generate a unique key and then migrate
 ```
 cd AMlaravel
 composer install
 php artisan key:generate
+php artisan migrate
 ```
 
 ## 6. A few more things...
