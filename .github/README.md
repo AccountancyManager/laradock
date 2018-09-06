@@ -54,7 +54,9 @@ SET SESSION sql_mode = 'NO_ENGINE_SUBSTITUTION';
 
 You will need a dev.php file and a .gitignore file within AMDev, im unsure if these are things we can commit to the source code, so for now, we can share them between us.
 
-## 6. Open your browser and visit localhost:
+You will also need to import the current db stuff to your new db, one of us can send you the file to import.
+
+## 7. Open your browser and visit localhost:
 - http://localhost/ for the existing site 
 - http://localhost:81/ for the new Laravel site 
 - http://localhost:82/ for PHPMyAdmin 
