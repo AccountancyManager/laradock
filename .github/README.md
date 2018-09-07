@@ -21,7 +21,7 @@ cp env-example .env
 cp .env.example .env
 ```
 
-## 4. Run the AM containers (the -d runs it in the background, --build makes sure it rebuilds the containers):
+## 4. Enter the laradock folder and Run the AM containers (the -d runs it in the background, --build makes sure it rebuilds the containers):
 ```
 docker-compose up -d --build
 ```
