@@ -56,6 +56,8 @@ You will need a dev.php file and a .gitignore file within AMDev, im unsure if th
 
 You will also need to import the current db stuff to your new db, one of us can send you the file to import.
 
+You will also need to set your AMDev branch to master-laravel
+
 ## 7. Open your browser and visit localhost:
 - http://localhost/ for the existing site 
 - http://localhost:81/ for the new Laravel site 
