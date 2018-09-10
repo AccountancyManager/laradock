@@ -18,7 +18,7 @@ cp env-example .env
 
 ## 3. Enter the AMlaravel folder and copy env-example to .env
 ```
-cp .env.example .env
+cp env.example .env
 ```
 
 ## 4. Enter the laradock folder and Run the AM containers (the -d runs it in the background, --build makes sure it rebuilds the containers):
